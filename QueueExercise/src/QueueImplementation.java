@@ -1,17 +1,16 @@
 import java.util.ArrayList;
 
-public class StackImplementation<T> implements Stack<T>{
+public class QueueImplementation<T> implements Queue<T>{
 	
 	private ArrayList<T> myItems = new ArrayList<T>();
-	
+
 	@Override
-	public void push(T item) {
-		myItems.add(0,item);
-		
+	public void add(T item) {
+		myItems.add(0, item);
 	}
 
 	@Override
-	public T pop() {
+	public T remove() {
 		if(! myItems.isEmpty())
 		{
 			T pop = myItems.get(myItems.size()-1);
@@ -22,9 +21,6 @@ public class StackImplementation<T> implements Stack<T>{
 		{	
 			return null;
 		}
-		
-		
-		
 	}
 
 	@Override
@@ -37,7 +33,6 @@ public class StackImplementation<T> implements Stack<T>{
 		{
 			return false;
 		}
-	
 	}
 	
 
