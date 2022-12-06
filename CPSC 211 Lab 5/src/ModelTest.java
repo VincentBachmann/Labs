@@ -1,9 +1,11 @@
 import java.io.File;
 import org.junit.Test;
 
-public class ModelTest {
+public class ModelTest 
+{
     @Test
-    public void testIsConnected() {
+    public void testIsConnected() 
+    {
         Model board = new Model(new File("test.txt"));
         if (board.isConnected = false)
         	System.out.print(false);
